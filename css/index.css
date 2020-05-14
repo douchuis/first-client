@@ -3,7 +3,6 @@ html {
   display: inline-block;
 }
 
-
 body {
   font-family: 'Indie Flower', cursive;
   background-color: lightgray;
@@ -13,6 +12,7 @@ body {
 
 .main-container {
   text-align: center;
+  margin-top: -15px;
 }
 
 h1 {
@@ -24,6 +24,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 5px;
 }
+
 #clock {
   font-size: 6.5rem;
   color: cyan;
@@ -36,13 +37,205 @@ h1 {
 p {
   color: deeppink;
   font-size: 3.5rem;
-  width: 100%;
-  margin-top: 20%;
   position: absolute;
   font-weight: bold;
+}
+
+.title1 {
+  width: 100%;
+  margin-top: 22%;
+}
+
+.sub-title1 {
+  width: 100%;
+  margin-top: 27%;
 }
 
 .images {
   width: 100%;
   height: 930px;
+}
+
+@media (max-width: 1366px){
+  .images {
+    height: 1024px;
+  }
+}
+
+@media (max-width: 1024px){
+  
+  h1 {
+    margin-top: 15%;
+  }
+  .images {
+    height: 1366px;
+  }
+  
+  #clock {
+    margin-top: 25%;
+  }
+  
+  p {
+    font-size: 3.2rem;
+  }
+  
+  .title1 {
+    margin-top: 35%;
+  }
+  
+  .sub-title1 {
+    margin-top: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    margin-top: -15px;
+  }
+  
+  .images {
+    height: 1024px;
+  }
+  
+  h1 {
+    font-size: 4.2rem;
+    margin-top: 15%;
+  }
+  
+  #clock {
+    font-size: 5.8rem;
+    margin-top: 20%;
+  }
+  
+  p {
+    font-size: 3.2rem;
+  }
+  
+  .title1 {
+    margin-top: 30%;
+  }
+  
+  .sub-title1 {
+    margin-top: 35%;
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 700px){
+  h1 {
+    margin-top: 30%;
+  }
+  
+  #clock {
+    margin-top: 40%;
+  }
+  
+  .title1 {
+    margin-top: 50%;
+  }
+  
+  .sub-title1 {
+    margin-top: 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    margin-top: 30%;
+  }
+  
+  #clock {
+    margin-top: 40%;
+  }
+  
+  .title1 {
+    margin-top: 55%;
+  }
+  
+  .sub-title1 {
+    margin-top: 60%;
+  }
+}
+
+@media (max-width: 480px){
+  .main-container {
+    margin-top: -15px;
+  }
+
+  .images {
+    width: 100%;
+    height: 640px;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    margin-top: 35%;
+  }
+
+  #clock {
+    font-size: 4.8rem;
+    margin-top: 50%;
+  }
+
+  p {
+    font-size: 3.2rem;
+  }
+
+  .title1 {
+    margin-top: 70%;
+  }
+
+  .sub-title1 {
+    margin-top: 85%;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .images {
+    height: 736px;
+  }
+}
+
+@media (max-width: 411px) {
+  .images {
+    height: 823px;
+  }
+}
+
+@media (max-width: 375px) {
+  .images {
+    height: 812px;
+  }
+}
+
+@media (max-width: 360px) {
+  .images {
+    height: 640px;
+  }
+}
+
+@media (max-width: 320px){
+  h1 {
+    font-size: 3.2rem;
+    margin-top: 35%;
+  }
+  
+  #clock {
+    font-size: 4.8rem;
+    margin-top: 70%;
+  }
+  
+  p {
+    font-size: 3.2rem;
+  }
+  
+  .title1 {
+    margin-top: 90%;
+  }
+  
+  .sub-title1 {
+    margin-top: 99%;
+    font-size: 1.8rem;
+  }
 }
