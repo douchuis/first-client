@@ -67,9 +67,6 @@ label {
   justify-self: center;
 }
 
-.audio {
-  background-color: cyan;
-}
 
 @media (max-width: 1366px){
   .images {
@@ -180,6 +177,10 @@ label {
   #music {
     display: grid;
     grid-template-columns: 1fr;
+    justify-self: center;
+  }
+  
+  .audio {
     justify-self: center;
   }
   
