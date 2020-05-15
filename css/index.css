@@ -213,6 +213,29 @@ p {
   .images {
     height: 640px;
   }
+  
+  h1 {
+    font-size: 3.2rem;
+    margin-top: 35%;
+  }
+  
+  #clock {
+    font-size: 4.8rem;
+    margin-top: 55%;
+  }
+  
+  p {
+    font-size: 3.2rem;
+  }
+  
+  .title1 {
+    margin-top: 70%;
+  }
+  
+  .sub-title1 {
+    margin-top: 85%;
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 320px){
