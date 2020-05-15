@@ -4,6 +4,7 @@
     <list default="true" id="de3fc5e5-89b8-4ed4-a408-8e1432acb792" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +67,8 @@
       <workItem from="1589492083545" duration="479000" />
       <workItem from="1589493125560" duration="4717000" />
       <workItem from="1589539420516" duration="247000" />
-      <workItem from="1589539930853" duration="329000" />
+      <workItem from="1589539930853" duration="512000" />
+      <workItem from="1589564262027" duration="3797000" />
     </task>
     <task id="LOCAL-00001" summary="Update reponsive page">
       <created>1589496397431</created>
