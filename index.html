@@ -23,14 +23,16 @@
         <div class="text-container">
           <span class="text">Audio Play</span>
           <br>
-          <span class="text"><i>Pham Le Ai My</i></span>
+         <a><span class="text"><i>Pham Le Ai My</i></span></a>
+<!--          <span class="text"><i>Pham Le Ai My</i></span>-->
           <br>
           <div class="playback_controls">
-            <button onclick="skip('back')"><i class="fa fa-fast-backward"></i></button>
-            <button onclick="playpause()"><i class="fa fa-play"></i><i class="fa fa-pause"></i></button>
-            <button onclick="stop()"><i class="fa fa-stop"></i></button>
-            <button onclick="skip('fwd')"><i class="fa fa-fast-forward"></i></button>
-            <button onclick="random()"><i class="fas fa-random"></i></button>
+            <button onclick="skip('back')"><a><i class="fa fa-fast-backward"></i></a></button>
+<!--            <button onclick="skip('back')"><i class="fa fa-fast-backward"></i></button>-->
+            <button onclick="play()"><a><i class="fa fa-play"></i></a></button>
+            <button onclick="pause()"><a><i class="fa fa-pause-circle"></i></a></button>
+            <button onclick="skip('fwd')"><a><i class="fa fa-fast-forward"></i></a></button>
+            <button onclick="random()"><a><i class="fas fa-random"></i></a></button>
           </div>
           <br>
           <div id="seekbar">
@@ -38,7 +40,7 @@
           </div>
           <br>
           <div class="volume_controls">
-            <button id="mute" onclick="mute()"><i class="fa fa-volume-up"></i></button>
+            <button id="mute" onclick="mute()"><a><i class="fa fa-volume-up"></i></a></button>
             <input type="range" id="volume" oninput="setVolume(this.value)" min="0" max="1" step="0.01" value="1">
           </div>
         </div>
@@ -70,7 +72,7 @@
                 x -= 1 ;
                 if(x < 0){
                     x = listSong.length-1;
-                    song.src = listSong[x]
+                    song.src = listSong[x];
                     song.play();
                 }else{
                     song.src = listSong[x];
@@ -88,29 +90,24 @@
                 }
             }
         }
-        function playpause() {
-            if (!song.paused) {
-                song.pause();
-            } else {
-                song.play();
-            }
+        function play() {
+          song.play();
         }
         
         // play random
         function random() {
             song.addEventListener('ended', function () {
                 this.currentTime = 0;
-                var nbList = listSong.length -1 ;
+                var nbList = listSong.length;
                 var y = Math.floor((Math.random() * (nbList)));
                 song.src = listSong[y];
                 song.play();
             },false);
             song.play();
         }
-        function stop() {
+        function pause() {
             song.pause();
-            song.currentTime = 0;
-            document.getElementById('seek').value = 0;
+            document.getElementById('seek').value = song.currentTime ;
         }
         function setPos(pos) {
             song.currentTime = pos;
