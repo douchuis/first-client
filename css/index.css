@@ -32,6 +32,14 @@ h1 {
   letter-spacing: 5px;
 }
 
+.dark-part {
+  color: white;
+  margin-top: -250px;
+  text-align: center;
+  justify-self: center;
+  font-size: 3.3rem;
+}
+
 #clock {
   font-size: 6.5rem;
   color: cyan;
