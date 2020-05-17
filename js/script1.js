@@ -1,3 +1,4 @@
+
 var i = 0;  // start point
 var images = [];
 var time = 5000;
@@ -48,10 +49,23 @@ function realtimeClock() {
         hour + " : " + minute + " : " + seconde + " " + amPm ;
     var t = setTimeout(realtimeClock, 500);
 
+}function setBgGreet() {
+    let today = new Date(),
+        hour = today.getHours();
+
+    if(hour <12) {
+        greeting.textContent = 'Good Morning Ai My';
+    }else if ((hour > 12) && (hour<18)){
+        greeting.textContent = "Good Afternoon Ai My";
+    }else {
+        greeting.textContent = "Good Evening Ai My";
+    }
+    greeting = document.getElementById('greeting');
 }
 
 function start() {
     realtimeClock();
     changeImg();
+    setBgGreet();
 }
 
