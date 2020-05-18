@@ -93,7 +93,8 @@
             "Wolves - Selena Gomez",
             "Señorita"
         ];
-        var x = 0;
+        var nbList = listSong.length;
+        var x = Math.floor((Math.random() * (nbList)));
         var song = new Audio();
         var muted = false;
         var vol = 1;
@@ -140,11 +141,10 @@
         function random() {
             song.addEventListener('ended', function () {
                 this.currentTime = 0;
-                var nbList = listSong.length;
-                var y = Math.floor((Math.random() * (nbList)));
-                song.src = listSong[y];
+                x = Math.floor((Math.random() * (nbList)));
+                song.src = listSong[x];
                 song.play();
-                myFunction(y);
+                myFunction(x);
             },false);
             song.play();
         }
