@@ -150,6 +150,7 @@ body,
 .text {
   color: #ffffff;
   display: block;
+  font-size: 1.8rem;
 }
 button {
   background: #000000;
