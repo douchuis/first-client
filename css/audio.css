@@ -177,6 +177,12 @@ button {
   -moz-border-radius: 32px;
   border-radius: 32px;
 }
+
+#seekbar {
+  padding-left: 20px;
+}
+
+
 input[type="range"] {
   -webkit-appearance: none;
   border: 1px solid #000000;
